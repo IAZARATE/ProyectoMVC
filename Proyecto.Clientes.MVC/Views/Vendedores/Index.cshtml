@@ -1,0 +1,18 @@
+﻿@using Proyecto.Clientes.MVC.Entidades
+@model List<Vendedor>
+
+<table class="table">
+    <tr>
+        <td>Id</td>
+        <td>Nombre</td>
+        <td>Apellido</td>
+    </tr>
+    @foreach (Vendedor c in Model)
+    {
+        <tr>
+            <td>@c.Id</td>
+            <td>@c.Nombre</td>
+            <td>@c.Apellido</td>
+        </tr>
+    }
+</table>
